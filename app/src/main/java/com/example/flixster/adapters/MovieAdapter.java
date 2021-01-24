@@ -34,6 +34,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         Log.d("MovieAdapter", "onCreateViewHolder");
         View movieView = LayoutInflater.from(context).inflate(R.layout.item_movie, parent, false);
         return new ViewHolder(movieView);
+//        return null;
     }
 
     // Involves populating data into the item throgh the holder
@@ -69,7 +70,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
             Log.d("ViewHolder", "bind:" + movie.getPosterPath());
-            Glide.with(context).load(movie.getPosterPath()).into(ivPoster);
         }
     }
 }
