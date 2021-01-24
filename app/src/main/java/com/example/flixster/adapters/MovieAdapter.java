@@ -70,6 +70,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
             Log.d("ViewHolder", "bind:" + movie.getPosterPath());
+            Glide.with(context).load(movie.getPosterPath()).dontAnimate().into(ivPoster);
         }
     }
 }
