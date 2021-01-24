@@ -2,33 +2,31 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/idPoster"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:id="@+id/ivPoster"
+        android:layout_width="172dp"
+        android:layout_height="match_parent"
+        android:visibility="visible"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="290dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="0dp"
-        android:layout_toEndOf="@+id/idPoster"
-        android:textSize="24sp"
-        tools:text="Skylines" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_toEndOf="@+id/idPoster"
-        tools:text="When a virus threatens to turn the now earth-dwelling friendly alien hybrids against humans, Captain Rose Corley must lead a team of elite mercenaries on a mission to the alien world in order to save what's left of humanity." />
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="41dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:text="TextView" />
 </RelativeLayout>
