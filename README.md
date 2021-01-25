@@ -27,6 +27,10 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [ ] Allow user to view details of the movie including ratings, genre and popularity in a seperate view.
 - [ ] Create feature for viewing video trailers in both portrait or landscape mode.
 - [ ] Create a feature for user account(basic info) and storing movies of interest
+- [x] Implement star rating display feature on itemized view:
+    - [x] Portrait mode
+    - [x] Landscape mode
+
 ### App Walkthough GIF
 `TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
 
