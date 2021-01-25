@@ -78,7 +78,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         public void bind(@NotNull Movie movie) {
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
-            tvRating.setText(Double.toString(movie.getVoteAverage()));
+//            tvRating.setText(Double.toString(movie.getVoteAverage()));
 //            movieId = movie.getMovieId();
 //            rbStarRating.setStepSize((float) 0.1);
 
