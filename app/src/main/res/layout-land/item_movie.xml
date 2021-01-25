@@ -4,19 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+
     <ImageView
         android:id="@+id/ivPoster"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
+        android:layout_width="475dp"
+        android:layout_height="275dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
         android:textSize="24sp"
         tools:text="Wonder Woman 1984" />
 
@@ -26,8 +35,25 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:textSize="14sp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:textSize="12sp"
         tools:text="Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah." />
+
+    <RatingBar
+        android:id="@+id/rbStarRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPoster"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/tvOverview"
+        android:isIndicator="true"
+        android:numStars="10"
+        android:scaleX=".75"
+        android:scaleY=".75"
+        android:stepSize="1" />
 </RelativeLayout>
