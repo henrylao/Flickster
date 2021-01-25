@@ -80,7 +80,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             tvOverview.setText(movie.getOverview());
 //            tvRating.setText(Double.toString(movie.getVoteAverage()));
 //            movieId = movie.getMovieId();
-//            rbStarRating.setStepSize((float) 0.1);
+            rbStarRating.setRating((float) movie.getVoteAverage());
 
             String imgUrl;
             // if phone is in landscape
