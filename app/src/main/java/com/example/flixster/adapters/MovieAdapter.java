@@ -2,12 +2,12 @@ package com.example.flixster.adapters;
 
 import android.content.Context;
 import android.content.res.Configuration;
-import android.telecom.Conference;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -62,17 +62,25 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         TextView tvTitle;
         TextView tvOverview;
         ImageView ivPoster;
+        TextView tvRating;
+        RatingBar rbStarRating;
+        int movieId;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvTitle = itemView.findViewById(R.id.tvTitle);
             tvOverview = itemView.findViewById(R.id.tvOverview);
             ivPoster = itemView.findViewById(R.id.ivPoster);
+            rbStarRating = itemView.findViewById(R.id.rbStarRating);
+//            tvRating = itemView.findViewById(R.id.tvRating);
         }
 
         public void bind(@NotNull Movie movie) {
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
+            tvRating.setText(Double.toString(movie.getVoteAverage()));
+//            movieId = movie.getMovieId();
+//            rbStarRating.setStepSize((float) 0.1);
 
             String imgUrl;
             // if phone is in landscape
