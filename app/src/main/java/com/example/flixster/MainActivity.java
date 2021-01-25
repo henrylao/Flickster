@@ -43,8 +43,12 @@ public class MainActivity extends AppCompatActivity {
 
         // Set a Layout Manager on the Recycler View
         rvMovies.setLayoutManager(new LinearLayoutManager(this));
+        getNowPlaying(NOW_PLAYING_URL, movieAdapter);
+    }
 
+    private void getNowPlaying(String endpointUrl, MovieAdapter movieAdapter){
         AsyncHttpClient client = new AsyncHttpClient();
+        // seperate out into a seperate function to implement different functions for different api calls
         client.get(NOW_PLAYING_URL, new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Headers headers, JSON json) {
@@ -65,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(int statusCode, Headers headers, String s, Throwable throwable) {
+            public void onFailure(int i, Headers headers, String s, Throwable throwable) {
                 Log.d(TAG, "onFailure");
             }
         });
