@@ -17,6 +17,7 @@ public class Movie {
     double popularity;
     List<Integer> genres;
     double voteAverage;
+    int id;
 
 
     public Movie(JSONObject jsonObject) throws JSONException {
@@ -25,6 +26,7 @@ public class Movie {
         overview = jsonObject.getString("overview");
         backdropPath = jsonObject.getString("backdrop_path");
         voteAverage = jsonObject.getDouble("vote_average");
+        id = jsonObject.getInt("id");
     }
 
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException {
@@ -33,6 +35,26 @@ public class Movie {
             movies.add(new Movie(movieJsonArray.getJSONObject(i)));
         }
         return movies;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public int getVote_count() {
+        return vote_count;
+    }
+
+    public double getPopularity() {
+        return popularity;
+    }
+
+    public List<Integer> getGenres() {
+        return genres;
+    }
+
+    public int getid() {
+        return id;
     }
 
     public String getPosterPath() {
@@ -51,7 +73,7 @@ public class Movie {
         return overview;
     }
 
-    public double getVoteAverage(){
+    public double getVoteAverage() {
         return voteAverage;
     }
 }
