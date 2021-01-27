@@ -21,6 +21,15 @@ import java.util.List;
 
 import okhttp3.Headers;
 
+/*
+TODO:
+- refactor end point url api
+- create:
+    1. base constant
+    2. feature extensions
+    3. get api key from .xml resource file and store in a constant
+
+ */
 public class MainActivity extends AppCompatActivity {
 
     public static final String NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
