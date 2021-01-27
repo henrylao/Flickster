@@ -2,13 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    >
 
 
     <ImageView
         android:id="@+id/ivPoster"
-        android:layout_width="475dp"
-        android:layout_height="275dp"
+        android:layout_width="450dp"
+        android:layout_height="250dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
         tools:srcCompat="@tools:sample/avatars" />
@@ -23,10 +25,8 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:paddingTop="5dp"
-        android:paddingRight="5dp"
-        android:paddingBottom="5dp"
-        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         tools:text="Wonder Woman 1984" />
 
     <TextView
@@ -35,24 +35,25 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivPoster"
         android:paddingStart="5dp"
-        android:paddingEnd="5dp"
         android:paddingRight="5dp"
+        android:textColor="@color/white"
         android:textSize="12sp"
         tools:text="Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah." />
 
     <RatingBar
         android:id="@+id/rbStarRating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ivPoster"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="0dp"
-        android:layout_toStartOf="@+id/tvOverview"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tvOverview"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/ivPoster"
         android:isIndicator="true"
-        android:numStars="10"
+        android:numStars="5"
+        android:progressTint="#FFC107"
         android:scaleX=".75"
         android:scaleY=".75"
         android:stepSize="1" />
