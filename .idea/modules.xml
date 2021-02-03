@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Flixster.iml" filepath="$PROJECT_DIR$/.idea/Flixster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Flixster.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Flixster.app.iml" />
     </modules>
   </component>
 </project>

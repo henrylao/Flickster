@@ -80,8 +80,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             tvOverview.setText(movie.getOverview());
 //            tvRating.setText(Double.toString(movie.getVoteAverage()));
 //            movieId = movie.getMovieId();
+//            rbStarRating.setNumStars(5);
             rbStarRating.setRating((float) movie.getVoteAverage());
-
             String imgUrl;
             // if phone is in landscape
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
@@ -90,6 +90,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             }
             // if phone is in portrait
             else {
+//                rbStarRating.setRating((float) movie.getVoteAverage());
                 // then get poster_path
                 imgUrl = movie.getPosterPath();
             }
