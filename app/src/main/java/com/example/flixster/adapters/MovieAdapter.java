@@ -17,6 +17,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.flixster.DetailActivity;
 import com.example.flixster.R;
 import com.example.flixster.models.Movie;
@@ -92,9 +94,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 public void onClick(View v) {
                     // 2. Action to be taken is a navigation to a new activity on tap
                     Intent i = new Intent(context, DetailActivity.class);
-                    i.putExtra("title", movie.getTitle());
-                    i.putExtra("overview", movie.getOverview());
-                    i.putExtra("vote_average", movie.getVoteAverage());
                     i.putExtra("movie", Parcels.wrap(movie));
                     context.startActivity(i);
 
@@ -119,7 +118,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 imgUrl = movie.getPosterPath();
             }
             Log.d("ViewHolder", "bind:" + imgUrl);
-            Glide.with(context).load(imgUrl).into(ivPoster);
+            Glide.with(context)
+                    .load(imgUrl)
+                    .apply(RequestOptions.bitmapTransform(new RoundedCorners(14)))
+                    .into(ivPoster);
         }
     }
 }
