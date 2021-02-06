@@ -1,5 +1,6 @@
 package com.example.flixster.adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -14,12 +15,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityOptionsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.flixster.DetailActivity;
+import com.example.flixster.MainActivity;
 import com.example.flixster.R;
 import com.example.flixster.models.Movie;
 
@@ -95,15 +98,12 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                     // 2. Action to be taken is a navigation to a new activity on tap
                     Intent i = new Intent(context, DetailActivity.class);
                     i.putExtra("movie", Parcels.wrap(movie));
+//                    ActivityOptionsCompat options = ActivityOptionsCompat.
+//                            makeSceneTransitionAnimation(this, DetailActivity, "profile");
                     context.startActivity(i);
-
 //                    Toast.makeText(context, movie.getTitle(), Toast.LENGTH_SHORT).show();   // DEBUG
-
                 }
             });
-//            tvRating.setText(Double.toString(movie.getVoteAverage()));
-//            movieId = movie.getMovieId();
-//            rbStarRating.setNumStars(5);
             rbStarRating.setRating((float) movie.getVoteAverage());
             String imgUrl;
             // if phone is in landscape
@@ -113,7 +113,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             }
             // if phone is in portrait
             else {
-//                rbStarRating.setRating((float) movie.getVoteAverage());
                 // then get poster_path
                 imgUrl = movie.getPosterPath();
             }
