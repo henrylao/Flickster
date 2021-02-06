@@ -5,6 +5,11 @@ MovieDBConstants.java
 com/example/flixster/adapters/MovieAdapter.java
  com.example.flixster.adapters.MovieAdapter
  com.example.flixster.adapters.MovieAdapter$ViewHolder
+ com.example.flixster.adapters.MovieAdapter$ViewHolder$1
+com/example/flixster/DetailActivity.java
+ com.example.flixster.DetailActivity
+ com.example.flixster.DetailActivity$1
+ com.example.flixster.DetailActivity$2
 com/example/flixster/BuildConfig.java
  com.example.flixster.BuildConfig
 com/example/flixster/MainActivity.java

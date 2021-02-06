@@ -97,6 +97,10 @@ MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\hlao1\.gradle\caches\tra
 		ADDED from C:\Users\hlao1\Github\Flickster\app\src\main\AndroidManifest.xml:13:9-65
 	android:usesCleartextTraffic
 		ADDED from C:\Users\hlao1\Github\Flickster\app\src\main\AndroidManifest.xml:14:9-44
+activity#com.example.flixster.DetailActivity
+ADDED from C:\Users\hlao1\Github\Flickster\app\src\main\AndroidManifest.xml:15:9-61
+	android:name
+		ADDED from C:\Users\hlao1\Github\Flickster\app\src\main\AndroidManifest.xml:15:19-49
 activity#com.example.flixster.MainActivity
 ADDED from C:\Users\hlao1\Github\Flickster\app\src\main\AndroidManifest.xml:16:9-22:20
 	android:name

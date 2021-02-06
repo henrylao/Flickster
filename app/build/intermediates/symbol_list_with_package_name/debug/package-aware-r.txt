@@ -1587,9 +1587,11 @@ id password_toggle
 id peekHeight
 id percent
 id pin
+id player
 id progress_circular
 id progress_horizontal
 id radio
+id ratingBar
 id rbStarRating
 id right
 id right_icon
@@ -1674,6 +1676,8 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tvDetailOverview
+id tvDetailTitle
 id tvOverview
 id tvTitle
 id unchecked
@@ -1746,6 +1750,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_detail
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1818,6 +1823,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string MDB_API_KEY
+string YOUTUBE_API_KEY
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1907,6 +1913,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
