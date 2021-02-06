@@ -19,6 +19,10 @@
 - [ ] Apply data binding for views to help remove boilerplate code. (1 point)
 - [x] Add a rounded corners for the images using the Glide transformations. (1 point)
 
+#### PERSONAL TWEAKS
+- [ ] Implement gathering of all movies that are showing in theaters
+- [ ] Implement a user login
+
 ### App Walkthough GIF
 
 `TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
@@ -27,7 +31,8 @@
 
 ### Notes
 
-Describe any challenges encountered while building the app.
+* Researching and implementing the shared element transition proved to be challenging requiring refinement of understanding of the components involved
+* Implementing the data binding for views was initially ambiguos and required further research before proceeding with implementation
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
