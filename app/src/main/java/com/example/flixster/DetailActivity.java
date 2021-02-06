@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
@@ -54,7 +55,7 @@ public class DetailActivity extends YouTubeBaseActivity {
                     }
                     String youtubeKey = results.getJSONObject(0).getString("key");
                     Log.d("DetailActivity", youtubeKey);
-                    initializeYoutube(youtubeKey);
+                    initializeYoutube(youtubeKey, movie);
                 } catch (JSONException e) {
                     Log.e("DetailActivity", "Failed to parse JSON", e);
                     e.printStackTrace();
@@ -68,7 +69,7 @@ public class DetailActivity extends YouTubeBaseActivity {
         });
     }
 
-    private void initializeYoutube(final String youtubeKey) {
+    private void initializeYoutube(final String youtubeKey, Movie movie) {
         // initialize with API key stored in secrets.xml
         youTubePlayerView.initialize(YOUTUBE_API_KEY, new YouTubePlayer.OnInitializedListener() {
             @Override
@@ -76,7 +77,13 @@ public class DetailActivity extends YouTubeBaseActivity {
                                                 YouTubePlayer youTubePlayer, boolean b) {
                 // do any work here to cue video, play video, etc.
 //                youTubePlayer.cueVideo(Integer.toString(movie.getid()));
-                youTubePlayer.cueVideo(youtubeKey);
+                // autostart trailer for popular movies
+                if (movie.getVoteAverage() >= 5) {
+//                    Toast.makeText(DetailActivity.this, "Autoplay", Toast.LENGTH_SHORT).show();   // DEBUG
+                    youTubePlayer.loadVideo(youtubeKey);
+                }
+                else
+                    youTubePlayer.cueVideo(youtubeKey);
             }
 
             @Override
@@ -87,4 +94,5 @@ public class DetailActivity extends YouTubeBaseActivity {
             }
         });
     }
+
 }
