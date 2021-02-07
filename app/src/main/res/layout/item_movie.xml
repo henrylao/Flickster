@@ -43,19 +43,4 @@
         android:textSize="11.5sp"
         tools:text="Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah." />
 
-    <RatingBar
-        android:id="@+id/rbStarRating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ivPoster"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="0dp"
-        android:layout_toStartOf="@+id/tvOverview"
-        android:isIndicator="true"
-        android:numStars="10"
-        android:progressTint="#FFC107"
-        android:scaleX=".75"
-        android:scaleY=".75"
-        android:stepSize="1" />
-
 </RelativeLayout>
