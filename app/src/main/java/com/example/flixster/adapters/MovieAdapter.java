@@ -82,7 +82,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             tvTitle = itemView.findViewById(R.id.tvTitle);
             tvOverview = itemView.findViewById(R.id.tvOverview);
             ivPoster = itemView.findViewById(R.id.ivPoster);
-            rbStarRating = itemView.findViewById(R.id.rbStarRating);
+//            rbStarRating = itemView.findViewById(R.id.rbStarRating);
             container = itemView.findViewById(R.id.container);
 //            tvRating = itemView.findViewById(R.id.tvRating);
         }
@@ -104,7 +104,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 //                    Toast.makeText(context, movie.getTitle(), Toast.LENGTH_SHORT).show();   // DEBUG
                 }
             });
-            rbStarRating.setRating((float) movie.getVoteAverage());
+//            rbStarRating.setRating((float) movie.getVoteAverage());
             String imgUrl;
             // if phone is in landscape
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
