@@ -1,7 +1,5 @@
 com/example/flixster/models/Movie.java
  com.example.flixster.models.Movie
-MovieDBConstants.java
- MovieDBConstants
 com/example/flixster/adapters/MovieAdapter.java
  com.example.flixster.adapters.MovieAdapter
  com.example.flixster.adapters.MovieAdapter$ViewHolder

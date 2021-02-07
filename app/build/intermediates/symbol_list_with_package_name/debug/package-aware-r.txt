@@ -1592,7 +1592,6 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratingBar
-id rbStarRating
 id right
 id right_icon
 id right_side
