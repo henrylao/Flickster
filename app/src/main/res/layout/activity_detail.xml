@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:transitionName="profile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity"
+    android:background="@color/black"
     android:orientation="vertical"
-    android:background="@color/black">
+    android:transitionName="profile"
+    tools:context=".DetailActivity">
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/player"
@@ -19,8 +19,8 @@
         android:id="@+id/tvDetailTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
         android:textColor="@color/white"
+        android:textSize="24sp"
         tools:text="Wonder Woman 1984" />
 
     <RatingBar
@@ -30,6 +30,8 @@
         android:layout_height="wrap_content"
         android:isIndicator="true"
         android:numStars="10"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#FFC107"
         android:rating="7" />
 
     <TextView
