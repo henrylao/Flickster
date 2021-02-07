@@ -62,8 +62,8 @@
     - [ ] Landscape mode
 
 ### App Walkthough GIF
-<img src="https://github.com/henrylao/Flickster/blob/main/docs/portrait-editted.gif" width=250><br>
-<img src="https://github.com/henrylao/Flickster/blob/main/docs/landscape-editted.gif" width=750><br>
+<img src="https://github.com/henrylao/Flickster/blob/main/docs/unit-1/portrait-editted.gif" width=250><br>
+<img src="https://github.com/henrylao/Flickster/blob/main/docs/unit-1/landscape-editted.gif" width=750><br>
 
 ### Notes
 * Still experiencing difficulties when configuring the stars to be properly displayed need to do a little bit more research into the rating bar widget
